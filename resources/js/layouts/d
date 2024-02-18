@@ -1,0 +1,18 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+// // Define los elementos de montaje para cada dominio
+
+// const domino1Element = document.getElementById('root');
+// const domino2Element = document.getElementById('root_2');
+
+// // Renderiza el componente principal en los elementos de montaje correspondientes
+// ReactDOM.render(
+//     <React.StrictMode>
+//     <App  Example_d={domino1Element}
+//     TranferFrom_d={domino2Element}
+//     />
+//   </React.StrictMode>,
+// );
+

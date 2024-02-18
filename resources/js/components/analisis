@@ -1,0 +1,17 @@
+// script sql para luego hacer apis
+
+SELECT enc.cedula_U, pre.Preguntas, rep.Respuesta
+FROM preguntas as pre join respuestas as rep on (pre.id=rep.id_p) join encuestado as enc on (enc.id=rep.id_e)
+where pre.Categoria= "CaracteristicasLaboralesyfamiliares"
+GROUP by enc.cedula_U, pre.Preguntas;
+
+para los reportes por categoria
+toca cambiar solo el == " nombre de la categoria "
+--------------------------
+
+SELECT DISTINCT(enc.cedula_U), pre.Preguntas, rep.Respuesta
+FROM preguntas as pre join respuestas as rep on (pre.id=rep.id_p) join encuestado as enc on (enc.id=rep.id_e)
+where pre.Categoria= "CaracteristicasLaboralesyfamiliares" ORDER BY enc.cedula_U ASC;
+
+//////////////////////////////////////////////////////////////////
+

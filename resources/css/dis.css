@@ -1,0 +1,155 @@
+table {
+	width: 110%;
+	height: 110%;
+ margin-left: 0%;
+ margin-right: 0%;
+}
+
+.content-input{
+	position: relative;
+	margin-bottom: 30px;
+	padding:5px 0 5px 60px;
+	display: block;
+}
+
+.content-input input[type=radio] + i{
+ height: 50px;
+ width: 50px;
+ border-radius: 100%;
+ left: 30px;
+}
+
+.content-input input + i{
+ background: #f0f0f0;
+ border:2px solid rgba(0,2,2,0.2);
+ position: absolute;
+ left: 0;
+ top: 0;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.radioB{
+  display:inline;
+  border:solid 0px black;
+   margin-right:25px;
+  size: 10%
+}
+.radioB input{
+
+  margin-right:5px; /*<- separando el checkbox del texto */
+  vertical-align: middle; /*<- centrando el checkbox en el medio */
+}
+
+body {
+    font-size: 16px;
+    background: #F3D9C1;
+    font-family: "Roboto";
+}
+
+ input[type="radio"] + label span {
+  background-color: #292321;
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #CC3300;
+}
+
+.formulario h2 {
+    font-size: 16px;
+    color: #003f0a;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.formulario > div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-input input[type=radio] + i:before{
+	content: '';
+	display: block;
+	height: 18px;
+	width: 18px;
+	background: red;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 4px;
+	left: 4px;
+	background:#2AC176;
+	transition: all 0.25s ease;
+	transform: scale(0)  ;
+	opacity: 0;
+}
+
+
+.content-input input[type=radio]:checked + i:before{
+	transform: scale(1);
+	opacity: 1;
+}
+.carousel .slide{
+    z-index: 0;
+}
+
+
+
+
+.contenedor1 {
+    background-image: url('../../public/fotos/FONDO.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el desplazamiento de la página */
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para resaltar el texto */
+    color: white;
+    text-align: center;
+    padding: 100px; /* Espaciado interior para el contenido */
+    display: grid;
+    right: auto;
+    left: auto  ;
+    place-items: center; /* Centra horizontalmente y verticalmente en el cuerpo */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+    font-size: 36px;
+    margin: 0;
+    color: black;
+}
+h4 {
+    font-size: 36px;
+    margin: 0;
+    color: black;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 10px; /* Espaciado interior para el pie de página */
+}
+
+/* Estilo para el mensaje de derechos de autor */
+footer p {
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilo para el enlace de derechos reservados (opcional) */
+footer a {
+    color: white; /* Color del enlace de derechos reservados */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+}
